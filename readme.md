@@ -1,2 +1,1 @@
 "# Symfony-Makefile"
-git init
