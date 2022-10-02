@@ -22,6 +22,19 @@ COMPOSER_INSTALL = $(COMPOSER) install
 COMPOSER_UPDATE = $(COMPOSER) update
 #------------#
 
+#---NPM-----#
+NPM = npm
+NPM_INSTALL = $(NPM) install --force
+NPM_UPDATE = $(NPM) update
+NPM_BUILD = $(NPM) run build
+NPM_DEV = $(NPM) run dev
+NPM_WATCH = $(NPM) run watch
+#------------#
+
+#---PHPUNIT-#
+PHPUNIT = APP_ENV=test $(SYMFONY) php bin/phpunit
+#------------#
+
 
 ## === 🆘  HELP ==================================================
 help: ## Show this help.
@@ -116,6 +129,28 @@ composer-install: ## Install composer dependencies.
 composer-update: ## Update composer dependencies.
 	$(COMPOSER_UPDATE)
 .PHONY: composer-update
+#---------------------------------------------#
+
+## === 📦  NPM ===================================================
+npm-install: ## Install npm dependencies.
+	$(NPM_INSTALL)
+.PHONY: npm-install
+
+npm-update: ## Update npm dependencies.
+	$(NPM_UPDATE)
+.PHONY: npm-update
+
+npm-build: ## Build assets.
+	$(NPM_BUILD)
+.PHONY: npm-build
+
+npm-dev: ## Build assets in dev mode.
+	$(NPM_DEV)
+.PHONY: npm-dev
+
+npm-watch: ## Watch assets.
+	$(NPM_WATCH)
+.PHONY: npm-watch
 #---------------------------------------------#
 
 ## === 🔎  TESTS =================================================
