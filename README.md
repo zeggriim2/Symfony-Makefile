@@ -9,7 +9,8 @@ Vous trouverez une collection de commandes utiles au quotidien dans un projet Sy
 * 1 - [Table des matières](#tablematières) 
 * 2 - [Makefile](#makefile)
     * 2.1 - [Requirement](#Requirement)
-    * 2.2 - [Utilisation/Exemple](#utilisation)
+    * 2.2 - [Utilisation/Exemple](#Utilisation)
+* 2 - [License](#License)
 
 
 ## 2 - <a name='makefile'></a>Makefile
@@ -24,7 +25,7 @@ Vous trouverez une collection de commandes utiles au quotidien dans un projet Sy
 make -v
 ```
 
-### 2.2 <a name='utilisation'></a>Utilisation/Exemple
+### 2.2 <a name='Utilisation'></a>Utilisation/Exemple
 
 Pour obtenir de l'aide à partir du fichier, exécuter simplement la command : 
 ```bash
@@ -35,3 +36,7 @@ Choisissez ensuite la cible :
 ```bash
 make [cible
 ```
+
+##  3. <a name='License'></a>License
+
+[MIT](LICENSE)
